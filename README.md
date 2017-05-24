@@ -3,11 +3,11 @@ A sample nodejs project for implementing a "blast dial" feature using the CMS AP
 
 The auto-dial service exposes an HTTP API that can be used to configure what remote destinations are associated with a space. The API lives at `/api/configs` on port `8444`
 
-To create a new config `POST` `/api/configs`
-To modify an existing config `PUT` `/api/configs/<id>`
-To delete a config and start over `DELETE` `/api/configs/<id>`
-To view a config `GET` `/api/configs/<id>`
-To view all configs `GET` `/api/configs`
+To create a new config `POST` `/api/configs`  
+To modify an existing config `PUT` `/api/configs/<id>`  
+To delete a config and start over `DELETE` `/api/configs/<id>`  
+To view a config `GET` `/api/configs/<id>`  
+To view all configs `GET` `/api/configs`  
 
 
 The `configs` node accepts a JSON object during `POST` and `PUT` operations :
