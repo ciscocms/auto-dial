@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     service mongod start
 
     # Node.js
-    curl -sL https://deb.nodesource.com/setup_7.x | bash -
+    curl -sL https://deb.nodesource.com/setup_13.x | bash -
     apt-get install -y nodejs
     node -v
     npm -v

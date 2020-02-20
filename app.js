@@ -16,7 +16,7 @@ app.use(xmlparser({explicitArray: false}));
 app.use("/api", routes);
 
 // Database stuff
-mongoose.connect(`mongodb://${config.mongoHost}/autodb`);
+mongoose.connect(`mongodb://${config.mongoHost}/autodb`, { useNewUrlParser: true, useUnifiedTopology: true });
 var db = mongoose.connection;
 db.on("error", function(err){
     console.error("Connection error:", err);
